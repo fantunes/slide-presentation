@@ -1,9 +1,13 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { SlideContext } from '../../SlideContext';
 
-function Slide() {
+const Slide = ({ imageUrl }) => {
+  const { slides, setSlides, currentSlide, setCurrentSlide } = useContext(SlideContext);
+
   return (
     <div>
-      slide
+      { currentSlide }
+      <img src={imageUrl} alt="" width="300" />
     </div>
   );
 }
