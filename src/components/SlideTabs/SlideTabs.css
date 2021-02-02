@@ -1,0 +1,22 @@
+.slidetabs {
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  border: 3px solid transparent;
+  margin: 10px;
+  max-width: 320px;
+  opacity: 0.6;
+}
+
+.slidetabs-img {
+  max-width: 320px;
+}
+
+.slidetabs + .slidetabs {
+  margin-top: 10px;
+}
+
+.slidetabs--active {
+  opacity: 1;
+  border-color: cyan;
+}

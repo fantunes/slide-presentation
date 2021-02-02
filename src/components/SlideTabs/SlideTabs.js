@@ -1,14 +1,12 @@
-import React, { useContext } from 'react';
-import { SlideContext } from '../../SlideContext';
+import React from 'react';
+import './SlideTabs.css';
 
-const SlideTabs = ({ imageUrl }) => {
-  const { slides, setSlides, currentSlide, setCurrentSlide } = useContext(SlideContext);
+const SlideTabs = ({ imageUrl, active }) => {
 
   return (
-    <div>
-      {/* { JSON.stringify(currentSlide) } */}
-      {/* <img src={imageUrl} alt="" width="300" /> */}
-      <p>{imageUrl}</p>
+    <div
+      className={ `slidetabs ${active && `slidetabs--active`}` }>
+      <img src={imageUrl} alt={imageUrl} className="slidetabs-img" />
     </div>
   );
 }

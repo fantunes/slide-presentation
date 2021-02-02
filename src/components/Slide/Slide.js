@@ -1,4 +1,4 @@
-import React, { useContext, useState, useEffect } from 'react';
+import React, { useContext, useEffect } from 'react';
 import { SlideContext } from '../../SlideContext';
 import './Slide.css';
 
@@ -37,8 +37,7 @@ const Slide = ({ imageUrl }) => {
       >
         prev
       </button>
-      {/* <img src={ imageUrl } alt="" width="300" /> */}
-      <div className="slide-img">{imageUrl}</div>
+      <img src={ imageUrl } alt={ imageUrl } className="slide-img" />
       <button
         className="slide-button slide-button--next"
         onClick={e => handleSlideControl(e, 1, slides, currentSlide)}

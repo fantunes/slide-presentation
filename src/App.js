@@ -57,7 +57,13 @@ const App = () => {
         </div>
         <div className="col-4">
         {
-          slides.map(s => <SlideTabs key={ s.id } imageUrl={ IMG_BASE_URL + s.image.name } />)
+          slides.map(s =>
+            <SlideTabs
+              active={(s.id === slides[currentSlide].id)}
+              key={ s.id }
+              imageUrl={ IMG_BASE_URL + s.image.name }
+            />
+          )
         }
         </div>
       </div>
