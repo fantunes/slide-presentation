@@ -14,7 +14,6 @@ const App = () => {
   // This is useful to prevent rerendering when slides change:
   const contextData = useMemo(() => (
       {
-        slides,
         setSlides,
         currentSlide,
         setCurrentSlide,
@@ -25,7 +24,6 @@ const App = () => {
       }
     ),
     [
-      slides,
       setSlides,
       currentSlide,
       setCurrentSlide,
@@ -52,6 +50,7 @@ const App = () => {
           { slides[currentSlide] &&
             <Slide
               key={ slides[currentSlide].id }
+              slides={ slides }
               imageUrl={ IMG_BASE_URL + slides[currentSlide].image.name } />
           }
         </div>
@@ -59,6 +58,7 @@ const App = () => {
         {
           slides.map(s =>
             <SlideTabs
+              slides={ slides }
               active={(s.id === slides[currentSlide].id)}
               key={ s.id }
               imageUrl={ IMG_BASE_URL + s.image.name }
