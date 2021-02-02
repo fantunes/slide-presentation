@@ -2,3 +2,13 @@ body {
   background: black;
   color: white;
 }
+
+@media screen and (min-width: 600px) {
+  .row {
+    display: flex;
+  }
+
+  .col-4 {
+    flex: 1;
+  }
+}

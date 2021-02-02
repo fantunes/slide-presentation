@@ -6,8 +6,9 @@ const SlideTabs = ({ imageUrl }) => {
 
   return (
     <div>
-      { currentSlide }
-      <img src={imageUrl} alt="" width="300" />
+      {/* { JSON.stringify(currentSlide) } */}
+      {/* <img src={imageUrl} alt="" width="300" /> */}
+      <p>{imageUrl}</p>
     </div>
   );
 }

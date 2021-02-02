@@ -1,0 +1,33 @@
+.slide {
+  min-height: 320px;
+  min-width: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.slide-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 1px;
+  height: 100%;
+  background: chartreuse;
+  z-index: 0;
+}
+
+.slide-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.slide-button--previous {
+  left: 0;
+}
+
+.slide-button--next {
+  right: 0;
+}
