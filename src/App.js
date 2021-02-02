@@ -55,7 +55,7 @@ const App = () => {
               imageUrl={ IMG_BASE_URL + slides[currentSlide].image.name } />
           }
         </div>
-        <div className="col-4">
+        <div className="col-4 flex-gallery">
         {
           slides.map(s =>
             <SlideTabs

@@ -1,15 +1,15 @@
 .slidetabs {
-  display: flex;
+  display: inline-block;
+  max-width: 120px;
   align-items: center;
   justify-self: center;
   border: 3px solid transparent;
   margin: 10px;
-  max-width: 320px;
   opacity: 0.6;
 }
 
 .slidetabs-img {
-  max-width: 320px;
+  max-width: 100%;
 }
 
 .slidetabs + .slidetabs {

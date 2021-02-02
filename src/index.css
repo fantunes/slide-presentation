@@ -6,9 +6,21 @@ body {
 @media screen and (min-width: 600px) {
   .row {
     display: flex;
+    flex-wrap: wrap;
   }
 
   .col-4 {
-    flex: 1;
+    flex: 1 1 30%;
+  }
+
+  .flex-gallery {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .col-8 {
+    flex: 1 1 70%;
   }
 }
